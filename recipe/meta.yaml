@@ -14,15 +14,16 @@ source:
 build:
   noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-  build:
-    - python
-    - setuptools
+  host:
+    - pip
+    - python >=3.4
   run:
-    - python
-    - jsonpickle
+    - jsonpickle >=1.0
+    - ordered-set >=3.1
+    - python >=3.4
 
 test:
   imports:
@@ -36,7 +37,7 @@ about:
   description: |
     Deep Difference of dictionaries, iterables, strings and other
     objects. It will recursively look for all the changes. Tested on
-    Python 2.7, 3.3, 3.4, 3.5, 3.6, Pypy, Pypy3
+    Python 3.4, 3.5, 3.6, 3.7, Pypy3
   doc_url: http://deepdiff.readthedocs.io/en/latest/
   dev_url: https://github.com/seperman/deepdiff
 

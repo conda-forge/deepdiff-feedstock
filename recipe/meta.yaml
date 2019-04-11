@@ -1,6 +1,6 @@
 {% set name = "deepdiff" %}
-{% set version = "3.3.0" %}
-{% set sha256 = "ecad8e16a96ffd27e8f40c9801a6ab16ec6a7e7e6e6859a7710ba4695f22702c" %}
+{% set version = "4.0.4" %}
+{% set sha256 = "ccb8a3025619c35b0f2de8b2c6a3f6411e7da2a2011723fbd1e35a2075334d62" %}
 
 package:
   name: {{ name|lower }}
@@ -14,15 +14,16 @@ source:
 build:
   noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-  build:
-    - python
-    - setuptools
+  host:
+    - pip
+    - python >=3.4
   run:
-    - python
-    - jsonpickle
+    - jsonpickle >=1.0
+    - ordered-set >=3.1
+    - python >=3.4
 
 test:
   imports:
@@ -36,7 +37,7 @@ about:
   description: |
     Deep Difference of dictionaries, iterables, strings and other
     objects. It will recursively look for all the changes. Tested on
-    Python 2.7, 3.3, 3.4, 3.5, 3.6, Pypy, Pypy3
+    Python 3.4, 3.5, 3.6, 3.7, Pypy3
   doc_url: http://deepdiff.readthedocs.io/en/latest/
   dev_url: https://github.com/seperman/deepdiff
 

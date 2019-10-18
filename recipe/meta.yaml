@@ -1,6 +1,6 @@
 {% set name = "deepdiff" %}
-{% set version = "4.0.7" %}
-{% set sha256 = "1123762580af0904621136d117c8397392a244d3ff0fa0a50de57a7939582476" %}
+{% set version = "4.0.8" %}
+{% set sha256 = "62ca21020e9c01383b5c45b9d89f418bdb78b4bb53f1d2374cd09db549e6959a" %}
 
 package:
   name: {{ name|lower }}
@@ -33,6 +33,7 @@ about:
   home: https://github.com/seperman/deepdiff
   summary: 'Deep Difference and Search of any Python object/data.'
   license: MIT
+  license_file: LICENSE
   license_family: MIT
   description: |
     Deep Difference of dictionaries, iterables, strings and other

@@ -1,6 +1,6 @@
 {% set name = "deepdiff" %}
-{% set version = "4.2.0" %}
-{% set sha256 = "ed7342d3ed3c0c2058a3fb05b477c943c9959ef62223dca9baa3375718a25d87" %}
+{% set version = "4.3.0" %}
+{% set sha256 = "eee68cc6853b47ded2d91524f74b681e09d66f68ffb3388ff15c5cdbc265bedb" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -31,7 +31,7 @@ test:
 
 about:
   home: https://github.com/seperman/deepdiff
-  summary: 'Deep Difference and Search of any Python object/data.'
+  summary: Deep Difference and Search of any Python object/data.
   license: MIT
   license_file: LICENSE
   license_family: MIT

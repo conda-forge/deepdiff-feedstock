@@ -5,7 +5,7 @@ Home: https://github.com/seperman/deepdiff
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Deep Difference and Search of any Python object/data.
 

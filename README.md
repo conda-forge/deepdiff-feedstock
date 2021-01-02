@@ -5,9 +5,13 @@ Home: https://github.com/seperman/deepdiff
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/deepdiff-feedstock/blob/master/LICENSE.txt)
 
 Summary: Deep Difference and Search of any Python object/data.
+
+Development: https://github.com/seperman/deepdiff
+
+Documentation: http://deepdiff.readthedocs.io/en/latest/
 
 Deep Difference of dictionaries, iterables, strings and other
 objects. It will recursively look for all the changes. Tested on

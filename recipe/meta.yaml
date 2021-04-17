@@ -1,6 +1,6 @@
 {% set name = "deepdiff" %}
-{% set version = "5.2.3" %}
-{% set sha256 = "ae2cb98353309f93fbfdda4d77adb08fb303314d836bb6eac3d02ed71a10b40e" %}
+{% set version = "5.3.0" %}
+{% set sha256 = "f0b62112799cc15ea02ca472ed4a74f8b0f0f0d29e6f09933d0d9a66afa032b4" %}
 
 package:
   name: {{ name|lower }}

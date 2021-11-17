@@ -19,11 +19,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.4
+    - python >=3.6
   run:
-    - jsonpickle >=1.0
-    - ordered-set >=3.1
-    - python >=3.4
+    - jsonpickle >=1.4.2
+    - ordered-set >=4.0.2
+    - python >=3.6
 
 test:
   imports:
@@ -46,3 +46,4 @@ extra:
   recipe-maintainers:
     - loriab
     - seperman
+    - synapticarbors

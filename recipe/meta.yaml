@@ -1,6 +1,6 @@
 {% set name = "deepdiff" %}
-{% set version = "5.5.0" %}
-{% set sha256 = "dd79b81c2d84bfa33aa9d94d456b037b68daff6bb87b80dfaa1eca04da68b349" %}
+{% set version = "5.6.0" %}
+{% set sha256 = "e3f1c3a375c7ea5ca69dba6f7920f9368658318ff1d8a496293c79481f48e649" %}
 
 package:
   name: {{ name|lower }}
@@ -19,11 +19,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.4
+    - python >=3.6
   run:
-    - jsonpickle >=1.0
-    - ordered-set >=3.1
-    - python >=3.4
+    - jsonpickle >=1.4.2
+    - ordered-set >=4.0.2
+    - python >=3.6
 
 test:
   imports:
@@ -46,3 +46,4 @@ extra:
   recipe-maintainers:
     - loriab
     - seperman
+    - synapticarbors

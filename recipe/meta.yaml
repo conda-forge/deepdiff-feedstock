@@ -21,11 +21,14 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - jsonpickle >=1.4.2
-    - ordered-set >=4.0.2
+    - ordered-set >=4.1.0,<4.2.0
     - python >=3.6
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - deepdiff
 

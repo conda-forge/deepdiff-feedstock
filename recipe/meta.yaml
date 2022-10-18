@@ -1,6 +1,6 @@
 {% set name = "deepdiff" %}
-{% set version = "5.8.1" %}
-{% set sha256 = "8d4eb2c4e6cbc80b811266419cb71dd95a157094a3947ccf937a94d44943c7b8" %}
+{% set version = "6.2.1" %}
+{% set sha256 = "3fe134dde5b3922ff8c51fc1e95a972e659c853797231b836a5ccf15532fd516" %}
 
 package:
   name: {{ name|lower }}
@@ -19,10 +19,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - ordered-set >=4.1.0,<4.2.0
-    - python >=3.6
+    - python >=3.7
 
 test:
   requires:
@@ -39,9 +39,8 @@ about:
   license_file: LICENSE
   license_family: MIT
   description: |
-    Deep Difference of dictionaries, iterables, strings and other
-    objects. It will recursively look for all the changes. Tested on
-    Python 3.4, 3.5, 3.6, 3.7, Pypy3
+    Deep Difference of dictionaries, iterables, strings and other objects. 
+    It will recursively look for all the changes.
   doc_url: http://deepdiff.readthedocs.io/en/latest/
   dev_url: https://github.com/seperman/deepdiff
 

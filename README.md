@@ -13,9 +13,8 @@ Development: https://github.com/seperman/deepdiff
 
 Documentation: http://deepdiff.readthedocs.io/en/latest/
 
-Deep Difference of dictionaries, iterables, strings and other
-objects. It will recursively look for all the changes. Tested on
-Python 3.4, 3.5, 3.6, 3.7, Pypy3
+Deep Difference of dictionaries, iterables, strings and other objects.
+It will recursively look for all the changes.
 
 
 Current build status

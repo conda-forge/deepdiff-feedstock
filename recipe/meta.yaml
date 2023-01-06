@@ -22,6 +22,7 @@ requirements:
     - python >=3.7
   run:
     - ordered-set >=4.1.0,<4.2.0
+    - orjson
     - python >=3.7
 
 test:

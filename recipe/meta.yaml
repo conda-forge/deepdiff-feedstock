@@ -1,6 +1,6 @@
 {% set name = "deepdiff" %}
-{% set version = "6.2.2" %}
-{% set sha256 = "d04d997a68bf8bea01f8a97395877314ef5c2131d8f57bba2295f3adda725282" %}
+{% set version = "6.2.3" %}
+{% set sha256 = "a02aaa8171351eba675cff5f795ec7a90987f86ad5449553308d4e18df57dc3d" %}
 
 package:
   name: {{ name|lower }}
@@ -22,6 +22,7 @@ requirements:
     - python >=3.7
   run:
     - ordered-set >=4.1.0,<4.2.0
+    - orjson
     - python >=3.7
 
 test:

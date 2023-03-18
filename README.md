@@ -1,11 +1,11 @@
-About deepdiff
-==============
+About deepdiff-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/deepdiff-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/seperman/deepdiff
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/deepdiff-feedstock/blob/main/LICENSE.txt)
 
 Summary: Deep Difference and Search of any Python object/data.
 

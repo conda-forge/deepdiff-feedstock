@@ -1,6 +1,6 @@
 {% set name = "deepdiff" %}
-{% set version = "6.7.1" %}
-{% set sha256 = "b367e6fa6caac1c9f500adc79ada1b5b1242c50d5f716a1a4362030197847d30" %}
+{% set version = "7.0.1" %}
+{% set sha256 = "260c16f052d4badbf60351b4f77e8390bee03a0b516246f6839bc813fb429ddf" %}
 
 package:
   name: {{ name|lower }}
@@ -19,11 +19,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
     - ordered-set >=4.1.0,<4.2.0
     - orjson
-    - python >=3.7
+    - python >=3.8
 
 test:
   requires:

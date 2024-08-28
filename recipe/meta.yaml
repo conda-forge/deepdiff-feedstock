@@ -20,9 +20,9 @@ requirements:
   host:
     - pip
     - python >=3.8
+    - setuptools
   run:
-    - ordered-set >=4.1.0,<4.2.0
-    - orjson
+    - orderly-set ==5.2.1
     - python >=3.8
 
 test:

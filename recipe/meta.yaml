@@ -24,7 +24,6 @@ requirements:
   run:
     - orderly-set ==5.2.2
     - python >=3.8
-    - numpy
 
 test:
   requires:

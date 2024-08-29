@@ -1,6 +1,6 @@
 {% set name = "deepdiff" %}
-{% set version = "8.0.0" %}
-{% set sha256 = "1f751f39984a0516686fddeccb80d43903abd14ac42d2ebeb8ae7c4f91420c6d" %}
+{% set version = "8.0.1" %}
+{% set sha256 = "245599a4586ab59bb599ca3517a9c42f3318ff600ded5e80a3432693c8ec3c4b" %}
 
 package:
   name: {{ name|lower }}
@@ -22,7 +22,7 @@ requirements:
     - python >=3.8
     - setuptools
   run:
-    - orderly-set ==5.2.1
+    - orderly-set ==5.2.2
     - python >=3.8
     - numpy
 

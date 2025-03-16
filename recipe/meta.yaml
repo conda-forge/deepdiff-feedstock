@@ -1,15 +1,13 @@
 {% set name = "deepdiff" %}
 {% set version = "8.4.0" %}
-{% set sha256 = "13bdc83c51a2a698d001e367b5766fcf2f74cec4984124bd5d7c15bac9ecee53" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 13bdc83c51a2a698d001e367b5766fcf2f74cec4984124bd5d7c15bac9ecee53
 
 build:
   noarch: python
@@ -23,6 +21,7 @@ requirements:
     - setuptools
   run:
     - orderly-set >=5.3.0,<6
+    - pytz
     - python >={{ python_min }}
 
 test:

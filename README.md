@@ -16,7 +16,6 @@ Documentation: http://deepdiff.readthedocs.io/en/latest/
 Deep Difference of dictionaries, iterables, strings and other objects.
 It will recursively look for all the changes.
 
-
 Current build status
 ====================
 

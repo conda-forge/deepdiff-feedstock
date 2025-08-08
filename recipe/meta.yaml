@@ -1,5 +1,5 @@
 {% set name = "deepdiff" %}
-{% set version = "8.5.0" %}
+{% set version = "8.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a4dd3529fa8d4cd5b9cbb6e3ea9c95997eaa919ba37dac3966c1b8f872dc1cd1
+  sha256: 6197216c2d777c3106a9989055c230e25848e599b26dcbcdc66226bd8d7fe901
 
 build:
   noarch: python

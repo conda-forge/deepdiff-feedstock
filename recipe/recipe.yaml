@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: deepdiff
-  version: 8.6.0
+  version: "8.6.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 6197216c2d777c3106a9989055c230e25848e599b26dcbcdc66226bd8d7fe901
+  sha256: ec56d7a769ca80891b5200ec7bd41eec300ced91ebcc7797b41eb2b3f3ff643a
 
 build:
   number: 0

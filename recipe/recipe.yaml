@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: deepdiff
-  version: "8.6.2"
+  version: 9.0.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 186dcbd181e4d76cef11ab05f802d0056c5d6083c5a6748c1473e9d7481e183e
+  sha256: 4872005306237b5b50829803feff58a1dfd20b2b357a55de22e7ded65b2008a7
 
 build:
   number: 0
@@ -23,9 +23,8 @@ requirements:
     - python ${{ python_min }}.*
     - flit-core >=3.11,<4
   run:
-    - orderly-set >=5.4.1,<6
+    - orderly-set >=5.5.0,<6
     - python >=${{ python_min }}
-
 tests:
   - python:
       imports:

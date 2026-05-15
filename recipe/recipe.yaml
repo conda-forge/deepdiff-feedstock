@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: deepdiff
-  version: 9.0.0
+  version: 9.1.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 4872005306237b5b50829803feff58a1dfd20b2b357a55de22e7ded65b2008a7
+  sha256: 07e9e366fab4297755153c4eab795ad4ef3cbd0d51660e847f5751c6bd727687
 
 build:
   number: 0
@@ -25,6 +25,7 @@ requirements:
   run:
     - orderly-set >=5.5.0,<6
     - python >=${{ python_min }}
+    - cachebox >=5.2,<6
 tests:
   - python:
       imports:
